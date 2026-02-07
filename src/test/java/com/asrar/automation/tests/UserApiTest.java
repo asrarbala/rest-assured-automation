@@ -1,15 +1,14 @@
 package com.asrar.automation.tests;
 
+import com.asrar.automation.base.BaseTest;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class UserApiTest {
+public class UserApiTest extends BaseTest {
 
     @Test
     public void verifyUserDetails() {
-
-        baseURI = "https://dummyjson.com";
 
         given()
                 .when()
